@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Goals Website</title>
+    <link rel="stylesheet" href="public/style.css">
+</head>
+<body>
+    <header>
+        <h1>Set Goals</h1>
+    </header>
+    <main>
+        <form id="goalForm">
+            <label for="goal">Goal:</label>
+            <input type="text" id="goal" name="goal" required>
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="description">
+            <label for="deadline">Deadline:</label>
+            <input type="date" id="deadline" name="deadline">
+            <button type="submit">Save Goal</button>
+        </form>
+        
+        <div id="goalList">
+            <!-- Goals will be dynamically added here -->
+        </div>
+    </main>
+
+    <script src="public/script.js"></script>
+</body>
+</html>
